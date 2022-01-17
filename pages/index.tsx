@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   async function handleSubmit() {
     try {
       const response = await axios.post<{ success: boolean }>(
-        'http://acrylic-backend.herokuapp.com/story_writing',
+        'https://acrylic-backend.herokuapp.com/story_writing',
         {
           data: story,
         }
